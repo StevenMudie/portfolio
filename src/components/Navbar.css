@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(37, 38, 42);
+}
+
+header li {
+  padding: 15px;
+  font-family: monospace;
+  color: white;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+span {
+  color: rgb(209, 209, 209);
+  font-weight: 300;
+}
+
+img {
+  width: 2rem;
+  color: white;
+}

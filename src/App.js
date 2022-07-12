@@ -1,26 +1,21 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Layout from "./components/layout/Layout";
 
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <Layout>
+    <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
-    </Layout>
+    </BrowserRouter>
   );
 }
 
